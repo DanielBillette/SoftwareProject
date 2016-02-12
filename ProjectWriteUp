@@ -1,0 +1,44 @@
+
+INTERVIEW
+Vesna:
+> Normally I would send an email(from gmail) that has a google form that all the teachers will get, and they will fill it out.
+It includes:
+Name, Phone number, Email
+Which courses are their top choices
+Which courses that they already tought
+Available times
+Substitute instructors(who could substitute for you)
+Additional Comments
+How many classes can you teach
+
+(NOTE*Form:https://docs.google.com/forms/d/1MmufIhcRA7_AuMw1kKGppEU8klUrVpSWF-FDv1Ci8w8/viewform )
+
+> I send the form, and they would reply, and I would open the form and look through it.
+
+> Basically Reza is the lead instructor on the program(VGP) and I do the scheduling so when it’s close to the scheduling time. Reza and I will have a conversation, and will look at the program flow, and say which courses(for instructors should take(?)).
+
+> In a scenario where an instructor chose to teach UML however if another person tries to apply for UML but if he is an absolute expert, I will have a conversation with Shariful, and say we have another person who is an expert, so do you wanna take some other courses, because I don’t wanna take courses away from him if he is available.
+
+> So it’s a very personal interaction, it changes, and it varies from time to time.
+
+> The return is messy, and I wish it would be a clear table.
+
+Shariful Islam - *Already covered by Vesna
+
+
+OVERVIEW OF OUR SYSTEM
+
+Were making an in-house system that uses a modular poll.
+Mainly to improve the school’s scheduling system.
+Allows admins to send polls to teachers and admins.
+This program will help instructors know more information about the schedule and have a better insight in which course is available.
+Have this program be on eCompanion to get data and information, depending on which authorized user that logged in.
+Analyse which instructor is available for which courses.
+A system that automatically output the feedback from the poll, that was generated from the reply.
+Automatically sorts the data from all of one poll and filters it to what the user selects	
+
+optional:
+Integrate our project to MARK/(other group’s project) to get Data.
+Export to a file (CSV, TXT, etc.)
+
+Our program can be referenced as a tool to improve the scheduling work flow.
