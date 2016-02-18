@@ -138,7 +138,7 @@ Form::~Form()
 {
 }
 
-void Form::AddQuestions()
+void Form::AddQuestions() // Name, Phone number, Email, Top choices you want to teach, coarses taught in past, time available, etc.
 {
 	for(int i = 0; i < NumOfQuestions; i++)
 	{
