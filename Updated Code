@@ -1,0 +1,76 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+void PrintEmails();
+void SelectTeachers();
+
+string Teachers[100];
+
+int main () 
+{
+	string line;
+	int count = 0;
+	ifstream myfile ("Teachers.txt");
+
+	if (myfile.is_open())
+	{
+		while ( getline (myfile,line) )
+		{
+			Teachers[count] = line;
+			count++;
+		}
+			myfile.close();
+	}
+
+	else cout << "Unable to open Teachers.txt"; 
+	SelectTeachers();
+}
+
+void PrintEmails()
+{
+	int count = 1;
+	cout << "\n";
+	while(Teachers[count - 1] != "\0")
+	{
+		cout << count << ": " << Teachers[count - 1];
+		if(count % 3 == 0)
+		{
+			cout << endl;
+		}
+		else
+		{
+			cout << "\t";
+		}
+		count++;
+	}
+}
+
+void SelectTeachers()
+{
+	int UserInput = 1;
+	ofstream myfile ("Recipients.txt");
+	while(UserInput != 0)	
+	{
+		PrintEmails();
+		cout << "\n(0 to finish) Choose a recipient: ";
+		cin >> UserInput;
+		if (myfile.is_open())
+		{
+		if(UserInput == 0)
+			{
+				cout << "\n\t[\tRecipients saved to file 'Recipients.txt'\t]\t\n\n";
+			}
+			else
+			{
+				system("cls");
+				myfile << Teachers[UserInput - 1] << endl;
+				cout << "\n\t[\t" << Teachers[UserInput - 1] << " added to recipients list" << "\t]\t" << endl;
+			}
+		}
+		else cout << "Unable to open Recipients.txt";
+	}
+	myfile.close();
+}
